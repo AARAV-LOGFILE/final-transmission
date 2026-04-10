@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char data[] = {
+        'h'^5, 't'^5, 't'^5, 'p'^5, 's'^5, ':'^5, '/'^5, '/'^5,
+        'd'^5, 'o'^5, 'c'^5, 's'^5, '.'^5, 'g'^5, 'o'^5, 'o'^5,
+        'g'^5, 'l'^5, 'e'^5, '.'^5, 'c'^5, 'o'^5, 'm'^5
+    };
+
+    int len = sizeof(data)/sizeof(data[0]);
+
+    for(int i = 0; i < len; i++) {
+        printf("%c", data[i] ^ 5);
+    }
+
+    return 0;
+}
